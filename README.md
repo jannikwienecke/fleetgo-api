@@ -23,9 +23,9 @@
   - python main.py
   
   
-## This code should be implemented in an api such as django
+### This code should be implemented in an api such as django
 
-## Before Running the programm, a .env must be created with the following variables (see .env-example)
+### Before Running the programm, a .env must be created with the following variables (see .env-example)
 FLEET_GO_USER_PASSWORD=
 FLEET_GO_USERNAME=
 FLEET_GO_CLIENT_SECRET=
