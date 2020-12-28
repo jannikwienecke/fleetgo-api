@@ -1,0 +1,100 @@
+2020-12-28 19:14:47.003 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2020-12-28 19:14:47.004 | INFO     | module.FleetGoLogin:info:24 - Login:Get Token From File.
+2020-12-28 19:14:47.004 | INFO     | module.FleetGoLogin:info:24 - Login:Get Refresh Token From File.
+2020-12-28 19:14:47.005 | INFO     | module.FleetGoLogin:info:24 - Start Scheduler - Refresh Token every 30 Minutes.
+2020-12-28 19:14:47.005 | INFO     | module.FleetGoLogin:info:24 - Login FleetGo Successfully
+2020-12-28 19:14:47.005 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2020-12-28 19:14:47.864 | INFO     | module.Fleet_Go:_get_request:63 - 200
+2020-12-28 19:14:47.869 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2020-12-28 19:14:48.224 | INFO     | module.Fleet_Go:_get_request:63 - 200
+2020-12-28 19:14:48.225 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
+2020-12-28 19:14:48.225 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
+2020-12-28 19:14:57.009 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:14:57.712 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843813999996}
+2020-12-28 19:15:07.715 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:15:08.161 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843754}
+2020-12-28 19:15:18.167 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:15:18.516 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
+2020-12-28 19:15:28.522 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:15:28.865 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
+2020-12-28 19:15:38.868 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:15:39.188 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843753}
+2020-12-28 19:15:49.194 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:15:49.519 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
+2020-12-28 19:15:59.520 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:15:59.840 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843763}
+2020-12-28 19:16:09.845 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:16:10.414 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
+2020-12-28 19:16:20.420 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:16:20.853 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
+2020-12-28 19:16:30.857 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:16:31.220 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
+2020-12-28 19:16:41.225 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:16:41.619 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
+2020-12-28 19:16:51.623 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:16:52.056 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843725}
+2020-12-28 19:17:02.058 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:17:02.409 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
+2020-12-28 19:17:12.412 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:17:12.755 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
+2020-12-28 19:17:22.761 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:17:23.185 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9844027999998}
+2020-12-28 19:17:33.190 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:17:33.743 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9844040999997}
+2020-12-28 19:17:43.749 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
+2020-12-28 19:17:44.108 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843643}
+2020-12-28 19:17:45.923 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2020-12-28 19:17:45.924 | INFO     | module.FleetGoLogin:info:24 - Login:Get Token From File.
+2020-12-28 19:17:45.924 | INFO     | module.FleetGoLogin:info:24 - Login:Get Refresh Token From File.
+2020-12-28 19:17:45.925 | INFO     | module.FleetGoLogin:info:24 - Start Scheduler - Refresh Token every 30 Minutes.
+2020-12-28 19:17:45.925 | INFO     | module.FleetGoLogin:info:24 - Login FleetGo Successfully
+2020-12-28 19:17:45.925 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2020-12-28 19:17:46.301 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2020-12-28 19:17:46.305 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2020-12-28 19:17:46.659 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2020-12-28 19:17:46.660 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
+2020-12-28 19:17:46.660 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
+2020-12-28 19:29:42.256 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2020-12-28 19:29:42.257 | INFO     | module.FleetGoLogin:info:27 - Login:Get Token From File.
+2020-12-28 19:29:42.257 | INFO     | module.FleetGoLogin:info:27 - Login:Get Refresh Token From File.
+2020-12-28 19:29:42.257 | INFO     | module.FleetGoLogin:info:27 - Start Scheduler - Refresh Token every 30 Minutes.
+2020-12-28 19:29:42.258 | INFO     | module.FleetGoLogin:info:27 - Login FleetGo Successfully
+2020-12-28 19:29:42.258 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2020-12-28 19:29:42.821 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2020-12-28 19:29:42.825 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2020-12-28 19:29:43.153 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2020-12-28 19:29:43.154 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
+2020-12-28 19:29:43.154 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
+2020-12-28 19:29:57.255 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2020-12-28 19:29:57.256 | INFO     | module.FleetGoLogin:info:27 - Login:Get Token From File.
+2020-12-28 19:29:57.256 | INFO     | module.FleetGoLogin:info:27 - Login:Get Refresh Token From File.
+2020-12-28 19:29:57.256 | INFO     | module.FleetGoLogin:info:27 - Start Scheduler - Refresh Token every 30 Minutes.
+2020-12-28 19:29:57.256 | INFO     | module.FleetGoLogin:info:27 - Login FleetGo Successfully
+2020-12-28 19:29:57.257 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2020-12-28 19:29:57.690 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2020-12-28 19:29:57.694 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2020-12-28 19:29:58.126 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2020-12-28 19:29:58.127 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
+2020-12-28 19:29:58.127 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
+2020-12-28 19:30:22.189 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2020-12-28 19:30:22.190 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2020-12-28 19:30:22.190 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2020-12-28 19:30:22.191 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
+2020-12-28 19:30:22.191 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2020-12-28 19:30:22.191 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2020-12-28 19:30:22.555 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2020-12-28 19:30:22.558 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2020-12-28 19:30:22.913 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2020-12-28 19:30:22.914 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
+2020-12-28 19:30:22.914 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
+2020-12-28 19:39:14.521 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2020-12-28 19:39:14.522 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2020-12-28 19:39:14.523 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2020-12-28 19:39:14.523 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
+2020-12-28 19:39:14.523 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2020-12-28 19:39:14.524 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2020-12-28 19:39:15.106 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2020-12-28 19:39:15.110 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2020-12-28 19:39:15.454 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2020-12-28 19:39:15.455 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
+2020-12-28 19:39:15.455 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
