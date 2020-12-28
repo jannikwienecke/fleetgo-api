@@ -23,8 +23,9 @@
   - python main.py
   
 
+
 ## ENV FILE
-### This code should be implemented in an api such as django
+### Before Running the programm, a .env must be created with the following variables (see .env-example)
 - FLEET_GO_USER_PASSWORD=
 - FLEET_GO_USERNAME=
 - FLEET_GO_CLIENT_SECRET=
@@ -32,5 +33,6 @@
 
 
 ## How To use it
-### Before Running the programm, a .env must be created with the following variables (see .env-example)
+### This code should be implemented in an api such as django
+
 
