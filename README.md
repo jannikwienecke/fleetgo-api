@@ -25,10 +25,10 @@
 
 ## ENV FILE
 ### This code should be implemented in an api such as django
-FLEET_GO_USER_PASSWORD=
-FLEET_GO_USERNAME=
-FLEET_GO_CLIENT_SECRET=
-FLEET_GO_CLIEND_ID=
+- FLEET_GO_USER_PASSWORD=
+- FLEET_GO_USERNAME=
+- FLEET_GO_CLIENT_SECRET=
+- FLEET_GO_CLIEND_ID=
 
 
 ## How To use it
