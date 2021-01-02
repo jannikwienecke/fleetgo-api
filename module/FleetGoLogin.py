@@ -162,6 +162,6 @@ class FleetGoLogin(FleetGo):
         thread_1 = threading.Thread(
             target=self._start_refresh_token_scheduler)
 
-        thread_1.start()
+        # thread_1.start()
 
         info("Login FleetGo Successfully")

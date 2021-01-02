@@ -15,6 +15,7 @@ class FLEET_GO_ENDPOINTS(Enum):
     TOKEN = 'session/token'
     EMPLOYEE_TRIP = 'Trips/GetEmployeeTrips'
     EMPLOYEE = 'Employee/Get'
+    VEHICLE = 'Equipment/GetFleet'
 
 
 class FleetGo:
@@ -57,6 +58,9 @@ class FleetGo:
             'Authorization': f'Bearer {self.access_token}'
         }
 
+        logger.info(
+            f"Request FleetGo: URL={url} PARAMS={query_params}")
+
         response = requests.get(url, params=query_params, headers={
             **headers, **config})
 
@@ -66,7 +70,9 @@ class FleetGo:
         if response.ok:
             return pd.DataFrame(response.json())
         else:
-            error_msg = 'Could not fetch data from FleetGo'
+            response_error = response.json()
+            print(response_error)
+            error_msg = f'Could not fetch data from FleetGo: {response_error["ErrorDescription"]}'
             self._raise(error_msg, query_params)
 
     def _raise(self, message: str, data: Dict[str, Any] = {},

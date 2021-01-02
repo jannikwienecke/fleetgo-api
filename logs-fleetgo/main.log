@@ -1,100 +1,1295 @@
-2020-12-28 19:14:47.003 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
-2020-12-28 19:14:47.004 | INFO     | module.FleetGoLogin:info:24 - Login:Get Token From File.
-2020-12-28 19:14:47.004 | INFO     | module.FleetGoLogin:info:24 - Login:Get Refresh Token From File.
-2020-12-28 19:14:47.005 | INFO     | module.FleetGoLogin:info:24 - Start Scheduler - Refresh Token every 30 Minutes.
-2020-12-28 19:14:47.005 | INFO     | module.FleetGoLogin:info:24 - Login FleetGo Successfully
-2020-12-28 19:14:47.005 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
-2020-12-28 19:14:47.864 | INFO     | module.Fleet_Go:_get_request:63 - 200
-2020-12-28 19:14:47.869 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
-2020-12-28 19:14:48.224 | INFO     | module.Fleet_Go:_get_request:63 - 200
-2020-12-28 19:14:48.225 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
-2020-12-28 19:14:48.225 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
-2020-12-28 19:14:57.009 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:14:57.712 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843813999996}
-2020-12-28 19:15:07.715 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:15:08.161 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843754}
-2020-12-28 19:15:18.167 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:15:18.516 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
-2020-12-28 19:15:28.522 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:15:28.865 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
-2020-12-28 19:15:38.868 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:15:39.188 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843753}
-2020-12-28 19:15:49.194 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:15:49.519 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
-2020-12-28 19:15:59.520 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:15:59.840 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843763}
-2020-12-28 19:16:09.845 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:16:10.414 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
-2020-12-28 19:16:20.420 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:16:20.853 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
-2020-12-28 19:16:30.857 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:16:31.220 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
-2020-12-28 19:16:41.225 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:16:41.619 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
-2020-12-28 19:16:51.623 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:16:52.056 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843725}
-2020-12-28 19:17:02.058 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:17:02.409 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
-2020-12-28 19:17:12.412 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:17:12.755 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3600.0}
-2020-12-28 19:17:22.761 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:17:23.185 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9844027999998}
-2020-12-28 19:17:33.190 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:17:33.743 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9844040999997}
-2020-12-28 19:17:43.749 | INFO     | module.FleetGoLogin:info:24 - Refresh FleetGo Token...
-2020-12-28 19:17:44.108 | INFO     | module.FleetGoLogin:info:24 - Response Refresh Token: {'token_type': 'Bearer', 'access_token': '7yva7qhu1datkft1y7bg', 'refresh_token': 'f8pcw4873ch4jbcum72j', 'expires_in': 3599.9843643}
-2020-12-28 19:17:45.923 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
-2020-12-28 19:17:45.924 | INFO     | module.FleetGoLogin:info:24 - Login:Get Token From File.
-2020-12-28 19:17:45.924 | INFO     | module.FleetGoLogin:info:24 - Login:Get Refresh Token From File.
-2020-12-28 19:17:45.925 | INFO     | module.FleetGoLogin:info:24 - Start Scheduler - Refresh Token every 30 Minutes.
-2020-12-28 19:17:45.925 | INFO     | module.FleetGoLogin:info:24 - Login FleetGo Successfully
-2020-12-28 19:17:45.925 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
-2020-12-28 19:17:46.301 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
-2020-12-28 19:17:46.305 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
-2020-12-28 19:17:46.659 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
-2020-12-28 19:17:46.660 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
-2020-12-28 19:17:46.660 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
-2020-12-28 19:29:42.256 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
-2020-12-28 19:29:42.257 | INFO     | module.FleetGoLogin:info:27 - Login:Get Token From File.
-2020-12-28 19:29:42.257 | INFO     | module.FleetGoLogin:info:27 - Login:Get Refresh Token From File.
-2020-12-28 19:29:42.257 | INFO     | module.FleetGoLogin:info:27 - Start Scheduler - Refresh Token every 30 Minutes.
-2020-12-28 19:29:42.258 | INFO     | module.FleetGoLogin:info:27 - Login FleetGo Successfully
-2020-12-28 19:29:42.258 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
-2020-12-28 19:29:42.821 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
-2020-12-28 19:29:42.825 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
-2020-12-28 19:29:43.153 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
-2020-12-28 19:29:43.154 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
-2020-12-28 19:29:43.154 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
-2020-12-28 19:29:57.255 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
-2020-12-28 19:29:57.256 | INFO     | module.FleetGoLogin:info:27 - Login:Get Token From File.
-2020-12-28 19:29:57.256 | INFO     | module.FleetGoLogin:info:27 - Login:Get Refresh Token From File.
-2020-12-28 19:29:57.256 | INFO     | module.FleetGoLogin:info:27 - Start Scheduler - Refresh Token every 30 Minutes.
-2020-12-28 19:29:57.256 | INFO     | module.FleetGoLogin:info:27 - Login FleetGo Successfully
-2020-12-28 19:29:57.257 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
-2020-12-28 19:29:57.690 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
-2020-12-28 19:29:57.694 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
-2020-12-28 19:29:58.126 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
-2020-12-28 19:29:58.127 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
-2020-12-28 19:29:58.127 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
-2020-12-28 19:30:22.189 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
-2020-12-28 19:30:22.190 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
-2020-12-28 19:30:22.190 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
-2020-12-28 19:30:22.191 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
-2020-12-28 19:30:22.191 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
-2020-12-28 19:30:22.191 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
-2020-12-28 19:30:22.555 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
-2020-12-28 19:30:22.558 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
-2020-12-28 19:30:22.913 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
-2020-12-28 19:30:22.914 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
-2020-12-28 19:30:22.914 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
-2020-12-28 19:39:14.521 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
-2020-12-28 19:39:14.522 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
-2020-12-28 19:39:14.523 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
-2020-12-28 19:39:14.523 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
-2020-12-28 19:39:14.523 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
-2020-12-28 19:39:14.524 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
-2020-12-28 19:39:15.106 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
-2020-12-28 19:39:15.110 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-06T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
-2020-12-28 19:39:15.454 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
-2020-12-28 19:39:15.455 | INFO     | module.FleetGoTrip:info:9 - Validate Trip Response
-2020-12-28 19:39:15.455 | WARNING  | __main__:fetch_trip_data_fleetgo:95 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
+2021-01-02 12:31:05.463 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:31:05.492 | INFO     | module.FleetGoLogin:info:23 - No Valid Token - Need To Get One.
+2021-01-02 12:31:05.492 | INFO     | module.FleetGoLogin:_request_login:149 - Login:Request new Token
+2021-01-02 12:31:05.992 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
+2021-01-02 12:31:05.992 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:31:05.992 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:31:06.294 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:31:06.680 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-10T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2021-01-02 12:31:07.015 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=False Status=400
+2021-01-02 12:31:07.015 | ERROR    | __main__:fetch_trip_data_fleetgo:98 - '__ERROR_FLEET_GO__: Could not fetch data from FleetGo, STATUS: 500)'
+2021-01-02 12:32:21.867 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:32:21.868 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:32:21.869 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:32:21.869 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
+2021-01-02 12:32:21.870 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:32:21.870 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:32:22.270 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:32:22.274 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-10T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2021-01-02 12:32:22.638 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=False Status=400
+2021-01-02 12:32:22.639 | ERROR    | __main__:fetch_trip_data_fleetgo:98 - '__ERROR_FLEET_GO__: Could not fetch data from FleetGo: {"Error":"BadRequest","ErrorDescription":"Maximum date range of 7 days exceeded for this service method.\\r\\nParameter name: toDateTime\\r\\nActual value was 12/10/2020 12:00:00 AM.","ErrorList":null}, STATUS: 500)'
+2021-01-02 12:32:49.716 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:32:49.716 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:32:49.717 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:32:49.717 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
+2021-01-02 12:32:49.717 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:32:49.717 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:32:50.226 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:32:50.230 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-10T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2021-01-02 12:32:50.560 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=False Status=400
+2021-01-02 12:32:50.560 | ERROR    | __main__:fetch_trip_data_fleetgo:98 - '__ERROR_FLEET_GO__: Could not fetch data from FleetGo: Bad Request, STATUS: 500)'
+2021-01-02 12:33:39.489 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:33:39.490 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:33:39.491 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:33:39.492 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
+2021-01-02 12:33:39.492 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:33:39.492 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:33:39.854 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:33:39.858 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-10T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2021-01-02 12:33:40.187 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=False Status=400
+2021-01-02 12:33:40.188 | ERROR    | __main__:fetch_trip_data_fleetgo:98 - "__ERROR_FLEET_GO__: Could not fetch data from FleetGo: {'Error': 'BadRequest', 'ErrorDescription': 'Maximum date range of 7 days exceeded for this service method.\\r\\nParameter name: toDateTime\\r\\nActual value was 12/10/2020 12:00:00 AM.', 'ErrorList': None}, STATUS: 500)"
+2021-01-02 12:34:16.034 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:34:16.035 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:34:16.035 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:34:16.036 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
+2021-01-02 12:34:16.036 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:34:16.036 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:34:16.691 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:34:16.695 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-10T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2021-01-02 12:34:17.076 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=False Status=400
+2021-01-02 12:34:17.076 | ERROR    | __main__:fetch_trip_data_fleetgo:98 - "__ERROR_FLEET_GO__: Could not fetch data from FleetGo: {'Error': 'BadRequest', 'ErrorDescription': 'Maximum date range of 7 days exceeded for this service method.\\r\\nParameter name: toDateTime\\r\\nActual value was 12/10/2020 12:00:00 AM.', 'ErrorList': None}, STATUS: 500)"
+2021-01-02 12:34:47.620 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:34:47.621 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:34:47.621 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:34:47.622 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
+2021-01-02 12:34:47.622 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:34:47.622 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:34:48.343 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:34:48.348 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-10T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2021-01-02 12:34:48.734 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=False Status=400
+2021-01-02 12:34:48.735 | ERROR    | __main__:fetch_trip_data_fleetgo:98 - "__ERROR_FLEET_GO__: Could not fetch data from FleetGo: {'Error': 'BadRequest', 'ErrorDescription': 'Maximum date range of 7 days exceeded for this service method.\\r\\nParameter name: toDateTime\\r\\nActual value was 12/10/2020 12:00:00 AM.', 'ErrorList': None}, STATUS: 500)"
+2021-01-02 12:35:20.167 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:35:20.168 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:35:20.169 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:35:20.169 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
+2021-01-02 12:35:20.169 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:35:20.170 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:35:20.531 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:35:20.535 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-10T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2021-01-02 12:35:20.887 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=False Status=400
+2021-01-02 12:35:20.887 | ERROR    | __main__:fetch_trip_data_fleetgo:98 - "__ERROR_FLEET_GO__: Could not fetch data from FleetGo: {'Error': 'BadRequest', 'ErrorDescription': 'Maximum date range of 7 days exceeded for this service method.\\r\\nParameter name: toDateTime\\r\\nActual value was 12/10/2020 12:00:00 AM.', 'ErrorList': None}, STATUS: 500)"
+2021-01-02 12:35:35.132 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:35:35.133 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:35:35.133 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:35:35.133 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
+2021-01-02 12:35:35.134 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:35:35.134 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:35:35.763 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:35:35.768 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-10T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2021-01-02 12:35:36.153 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=False Status=400
+2021-01-02 12:35:36.153 | ERROR    | __main__:fetch_trip_data_fleetgo:98 - "__ERROR_FLEET_GO__: Could not fetch data from FleetGo: {'Error': 'BadRequest', 'ErrorDescription': 'Maximum date range of 7 days exceeded for this service method.\\r\\nParameter name: toDateTime\\r\\nActual value was 12/10/2020 12:00:00 AM.', 'ErrorList': None}, STATUS: 500)"
+2021-01-02 12:37:08.245 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:37:08.246 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:37:08.246 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:37:08.246 | INFO     | module.FleetGoLogin:info:23 - Start Scheduler - Refresh Token every 30 Minutes.
+2021-01-02 12:37:08.247 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:37:08.247 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:37:08.888 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:37:08.893 | INFO     | module.FleetGoTrip:info:9 - Fetch Trip Data: Params={'to': '2020-12-10T00:00:00', 'extendedInfo': False, 'employeeId': 3383990477, 'from': '2020-12-01T00:00:00'}
+2021-01-02 12:37:09.288 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=False Status=400
+2021-01-02 12:37:09.288 | ERROR    | __main__:fetch_trip_data_fleetgo:98 - '__ERROR_FLEET_GO__: Could not fetch data from FleetGo: Maximum date range of 7 days exceeded for this service method.\r\nParameter name: toDateTime\r\nActual value was 12/10/2020 12:00:00 AM., STATUS: 500)'
+2021-01-02 12:40:19.741 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:40:19.742 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:40:19.743 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:40:19.743 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:40:19.743 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:40:20.327 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:40:31.679 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:40:31.680 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:40:31.680 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:40:31.681 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:40:31.681 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:40:32.083 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:41:52.188 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:41:52.189 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:41:52.189 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:41:52.189 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:41:52.189 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:41:52.756 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:41:52.761 | INFO     | module.FleetGoTrip:info:9 - 9 days 00:00:00
+2021-01-02 12:42:10.926 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:42:10.927 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:42:10.927 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:42:10.927 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:42:10.928 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:42:11.361 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:42:18.410 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:42:18.411 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:42:18.411 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:42:18.412 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:42:18.412 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:42:18.778 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:42:18.782 | INFO     | module.FleetGoTrip:info:9 - 9
+2021-01-02 12:42:33.320 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:42:33.321 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:42:33.321 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:42:33.322 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:42:33.322 | INFO     | module.FleetGoTrip:info:9 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:42:33.647 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:42:33.653 | INFO     | module.FleetGoTrip:info:9 - time_range_days9
+2021-01-02 12:42:55.674 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:42:55.674 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:42:55.675 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:42:55.675 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:42:55.675 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:42:56.031 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:42:56.036 | INFO     | module.FleetGoTrip:info:10 - time_range_days9
+2021-01-02 12:50:54.242 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:50:54.244 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:50:54.245 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:50:54.245 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:50:54.245 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:50:54.799 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:50:54.805 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-01 00:00:00
+2021-01-02 12:50:54.805 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-10 00:00:00
+2021-01-02 12:50:54.805 | INFO     | module.FleetGoTrip:info:10 - time_range_days9
+2021-01-02 12:51:38.651 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:51:38.652 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:51:38.652 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:51:38.653 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:51:38.653 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:51:39.052 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:51:39.057 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 12:51:39.057 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 12:51:39.057 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 12:51:39.057 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-01 00:00:00
+2021-01-02 12:51:39.058 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-10 00:00:00
+2021-01-02 12:51:39.058 | INFO     | module.FleetGoTrip:info:10 - time_range_days9
+2021-01-02 12:51:58.854 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:51:58.855 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:51:58.855 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:51:58.856 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:51:58.856 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:51:59.224 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:51:59.228 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 12:51:59.228 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 12:51:59.229 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 12:52:09.014 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:52:09.015 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:52:09.016 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:52:09.016 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:52:09.016 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:52:09.358 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:52:09.363 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 12:52:09.364 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 12:52:09.364 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 12:52:09.364 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-01 00:00:00
+2021-01-02 12:52:09.364 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00.000000006
+2021-01-02 12:52:09.364 | INFO     | module.FleetGoTrip:info:10 - time_range_days9
+2021-01-02 12:52:40.973 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:52:40.974 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:52:40.975 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:52:40.975 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:52:40.975 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:52:41.497 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:52:41.502 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 12:52:41.502 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 12:52:41.502 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 12:52:41.502 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-01 00:00:00
+2021-01-02 12:52:41.502 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-07 00:00:00
+2021-01-02 12:52:41.503 | INFO     | module.FleetGoTrip:info:10 - time_range_days9
+2021-01-02 12:53:24.414 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:53:24.415 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:53:24.415 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:53:24.415 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:53:24.415 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:53:24.897 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:53:24.902 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 12:53:24.903 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 12:53:24.903 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 12:53:24.903 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-01 00:00:00
+2021-01-02 12:53:24.903 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-07 00:00:00
+2021-01-02 12:53:25.357 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:53:25.358 | INFO     | module.FleetGoTrip:info:10 - time_range_days9
+2021-01-02 12:54:02.691 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:54:02.692 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:54:02.692 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:54:02.692 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:54:02.693 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:54:03.233 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:54:03.238 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 12:54:03.239 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 12:54:03.239 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 12:54:03.239 | INFO     | module.FleetGoTrip:info:10 - needed_requests = 1
+2021-01-02 12:54:03.239 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-01 00:00:00
+2021-01-02 12:54:03.239 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-07 00:00:00
+2021-01-02 12:54:03.579 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:54:03.580 | INFO     | module.FleetGoTrip:info:10 - time_range_days9
+2021-01-02 12:54:31.577 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:54:31.578 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:54:31.578 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:54:31.579 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:54:31.579 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:54:31.932 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:54:31.937 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 12:54:31.938 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 12:54:31.938 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 12:54:31.938 | INFO     | module.FleetGoTrip:info:10 - needed_requests = 2
+2021-01-02 12:54:31.938 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-01 00:00:00
+2021-01-02 12:54:31.938 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-07 00:00:00
+2021-01-02 12:54:32.295 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:54:32.296 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 12:54:32.296 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-19 00:00:00
+2021-01-02 12:54:32.666 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=False Status=400
+2021-01-02 12:54:32.666 | ERROR    | __main__:fetch_trip_data_fleetgo:98 - '__ERROR_FLEET_GO__: Could not fetch data from FleetGo: Maximum date range of 7 days exceeded for this service method.\r\nParameter name: toDateTime\r\nActual value was 12/19/2020 12:00:00 AM., STATUS: 500)'
+2021-01-02 12:54:57.218 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:54:57.219 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:54:57.220 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:54:57.220 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:54:57.220 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:54:57.608 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:54:57.613 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 12:54:57.614 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 12:54:57.614 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 12:54:57.614 | INFO     | module.FleetGoTrip:info:10 - needed_requests = 2
+2021-01-02 12:54:57.614 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-01 00:00:00
+2021-01-02 12:54:57.614 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-07 00:00:00
+2021-01-02 12:54:57.942 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:54:57.944 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 12:54:57.944 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-13 00:00:00
+2021-01-02 12:54:58.314 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:54:58.315 | INFO     | module.FleetGoTrip:info:10 - time_range_days9
+2021-01-02 12:55:30.387 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 12:55:30.388 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 12:55:30.388 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 12:55:30.389 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 12:55:30.389 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 12:55:30.939 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:55:30.944 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 12:55:30.944 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 12:55:30.944 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 12:55:30.945 | INFO     | module.FleetGoTrip:info:10 - needed_requests = 2
+2021-01-02 12:55:30.945 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-01 00:00:00
+2021-01-02 12:55:30.945 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-07 00:00:00
+2021-01-02 12:55:31.304 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:55:31.304 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 12:55:31.305 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-10 00:00:00
+2021-01-02 12:55:31.671 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 12:55:31.672 | INFO     | module.FleetGoTrip:info:10 - time_range_days9
+2021-01-02 13:12:15.764 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:12:15.766 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:12:15.767 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:12:15.767 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:12:15.767 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 13:12:16.646 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:12:16.652 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:12:16.652 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:12:16.652 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:12:16.653 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00
+2021-01-02 13:12:16.653 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 13:12:17.183 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:14:08.188 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:14:08.189 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:14:08.189 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:14:08.189 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:14:08.189 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 13:14:08.910 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:14:08.915 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:14:08.915 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:14:08.915 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:14:08.915 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00
+2021-01-02 13:14:08.916 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 13:14:09.445 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:14:21.945 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:14:21.946 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:14:21.946 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:14:21.947 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:14:21.947 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 13:14:22.356 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:14:22.361 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:14:22.362 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:14:22.362 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:14:22.362 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00
+2021-01-02 13:14:22.362 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 13:14:22.702 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:15:20.080 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:15:20.081 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:15:20.081 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:15:20.081 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:15:20.081 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 13:15:20.594 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:15:20.599 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:15:20.599 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:15:20.599 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:15:20.599 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00
+2021-01-02 13:15:20.599 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 13:15:21.150 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:15:21.151 | INFO     | __main__:fetch_trip_data_fleetgo:92 - None
+2021-01-02 13:15:50.939 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:15:50.940 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:15:50.940 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:15:50.940 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:15:50.940 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 13:15:51.929 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:15:51.934 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:15:51.934 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:15:51.934 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:15:51.935 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00
+2021-01-02 13:15:51.935 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 13:15:52.452 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:15:52.453 | INFO     | module.FleetGoTrip:info:10 - ===========Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:15:52.454 | INFO     | __main__:fetch_trip_data_fleetgo:92 - None
+2021-01-02 13:16:13.707 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:16:13.708 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:16:13.708 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:16:13.708 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:16:13.708 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 13:16:14.228 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:16:14.233 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:16:14.233 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:16:14.233 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:16:14.233 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00
+2021-01-02 13:16:14.234 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 13:16:14.719 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:16:14.720 | INFO     | module.FleetGoTrip:info:10 - ===========Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:16:14.721 | INFO     | module.FleetGoTrip:info:10 - ===========Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:16:14.721 | INFO     | __main__:fetch_trip_data_fleetgo:92 - None
+2021-01-02 13:16:48.324 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:16:48.325 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:16:48.325 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:16:48.325 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:16:48.326 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 13:16:48.792 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:16:48.797 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:16:48.798 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:16:48.798 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:16:48.798 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00
+2021-01-02 13:16:48.798 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 13:16:49.274 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:16:49.276 | INFO     | module.FleetGoTrip:info:10 - =====df======Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:16:49.276 | INFO     | module.FleetGoTrip:info:10 - =====df_trip_partial======None
+2021-01-02 13:17:10.134 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:17:10.135 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:17:10.135 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:17:10.135 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:17:10.135 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 13:17:11.028 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:17:11.033 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:17:11.034 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:17:11.034 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:17:11.034 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00
+2021-01-02 13:17:11.034 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 13:17:11.585 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:17:11.586 | INFO     | module.FleetGoTrip:info:10 - =====df======Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:17:11.587 | INFO     | module.FleetGoTrip:info:10 - =====df_trip_partial======Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:17:11.587 | INFO     | module.FleetGoTrip:info:10 - ===========Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:17:11.588 | INFO     | __main__:fetch_trip_data_fleetgo:92 - None
+2021-01-02 13:18:02.648 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:18:02.649 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:18:02.649 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:18:02.649 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:18:02.649 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 13:18:03.065 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:18:03.070 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:18:03.070 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:18:03.071 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:18:03.071 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00
+2021-01-02 13:18:03.071 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 13:18:03.770 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:18:03.772 | INFO     | module.FleetGoTrip:info:10 - =====df======Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:18:03.773 | INFO     | module.FleetGoTrip:info:10 - =====df_trip_partial======Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:18:03.774 | INFO     | module.FleetGoTrip:info:10 - ===========Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:18:03.774 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:18:25.839 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:18:25.840 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:18:25.840 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:18:25.840 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:18:25.840 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 13:18:26.269 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:18:26.274 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:18:26.274 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:18:26.274 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:18:26.274 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00
+2021-01-02 13:18:26.275 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 13:18:26.603 | INFO     | module.Fleet_Go:_get_request:63 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:18:26.604 | INFO     | module.FleetGoTrip:info:10 - =====df======Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:18:26.605 | INFO     | module.FleetGoTrip:info:10 - =====df_trip_partial======Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:18:26.605 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:18:26.606 | WARNING  | __main__:fetch_trip_data_fleetgo:96 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
+2021-01-02 13:19:36.182 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:19:36.183 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:19:36.183 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:19:36.183 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:19:36.184 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Jannik', Name='Wienecke')
+2021-01-02 13:19:36.184 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:19:37.455 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:19:37.460 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:19:37.460 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:19:37.460 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:19:37.460 | INFO     | module.FleetGoTrip:info:10 - To TDAGTE = 2020-12-01 00:00:00
+2021-01-02 13:19:37.460 | INFO     | module.FleetGoTrip:info:10 - FROM TDAGTE = 2020-12-07 00:00:00
+2021-01-02 13:19:37.461 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383990477, 'from': Timestamp('2020-12-01 00:00:00')}
+2021-01-02 13:19:38.491 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:19:38.493 | INFO     | module.FleetGoTrip:info:10 - =====df======Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:19:38.493 | INFO     | module.FleetGoTrip:info:10 - =====df_trip_partial======Empty DataFrame
+Columns: []
+Index: []
+2021-01-02 13:19:38.494 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:19:38.494 | WARNING  | __main__:fetch_trip_data_fleetgo:96 - '__Warning_FLEET_GO__: Keine Tripdaten vorhanden FleetGo, STATUS: 500)'
+2021-01-02 13:20:36.970 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:20:36.971 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:20:36.971 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:20:36.971 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:20:36.971 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:20:36.971 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:20:37.384 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:20:37.389 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:20:37.389 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:20:37.389 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:20:37.390 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-01 00:00:00')}
+2021-01-02 13:20:37.956 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:20:38.036 | INFO     | module.FleetGoTrip:info:10 - ===========            Id  EquipmentId  ...  TripTypeId  PrivateDetourKm
+0   3526411105   3378601950  ...           0              0.0
+1   3526411748   3378601950  ...           0              0.0
+2   3526418065   3378601950  ...           0              0.0
+3   3526422503   3378601950  ...           0              0.0
+4   3526456172   3378601950  ...           0              0.0
+5   3526460380   3378601950  ...           0              0.0
+6   3526470757   3378601950  ...           0              0.0
+7   3526506368   3378601950  ...           0              0.0
+8   3526518977   3378601950  ...           0              0.0
+9   3526601817   3378601950  ...           0              0.0
+10  3526604309   3378601950  ...           0              0.0
+11  3526604565   3378601950  ...           0              0.0
+12  3526606078   3378601950  ...           0              0.0
+13  3526606169   3378601950  ...           0              0.0
+14  3526606882   3378601950  ...           0              0.0
+15  3526625314   3378601950  ...           0              0.0
+16  3526678579   3378601950  ...           0              0.0
+17  3526685044   3378601950  ...           0              0.0
+18  3526735636   3378601950  ...           0              0.0
+19  3526742939   3378601950  ...           0              0.0
+20  3526747657   3378601950  ...           0              0.0
+21  3526752693   3378601950  ...           0              0.0
+22  3526757232   3378601950  ...           0              0.0
+23  3526781912   3378601950  ...           0              0.0
+24  3526791294   3378601950  ...           0              0.0
+
+[25 rows x 33 columns]
+2021-01-02 13:20:38.037 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:20:38.037 | INFO     | module.FleetGoTrip:info:10 - Parse Trip Data
+2021-01-02 13:20:38.055 | INFO     | module.FleetGoTrip:info:10 - Success Getting Trip Data
+2021-01-02 13:20:38.055 | INFO     | __main__:fetch_trip_data_fleetgo:92 -     drivernameid_id  ...  truckweight
+0        3383992692  ...            0
+1        3383992692  ...            0
+2        3383992692  ...            0
+3        3383992692  ...            0
+4        3383992692  ...            0
+5        3383992692  ...            0
+6        3383992692  ...            0
+7        3383992692  ...            0
+8        3383992692  ...            0
+9        3383992692  ...            0
+10       3383992692  ...            0
+11       3383992692  ...            0
+12       3383992692  ...            0
+13       3383992692  ...            0
+14       3383992692  ...            0
+15       3383992692  ...            0
+16       3383992692  ...            0
+17       3383992692  ...            0
+18       3383992692  ...            0
+19       3383992692  ...            0
+20       3383992692  ...            0
+21       3383992692  ...            0
+22       3383992692  ...            0
+23       3383992692  ...            0
+24       3383992692  ...            0
+
+[25 rows x 12 columns]
+2021-01-02 13:20:38.068 | INFO     | __main__:fetch_trip_data_fleetgo:93 - Result: Dataframe with Length: 25 
+2021-01-02 13:21:10.712 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:21:10.713 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:21:10.713 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:21:10.714 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:21:10.714 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:21:10.714 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:21:11.471 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:21:11.476 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:21:11.477 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:21:11.477 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:21:11.477 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-01 00:00:00')}
+2021-01-02 13:21:12.020 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:21:12.024 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 25
+2021-01-02 13:21:12.027 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:21:12.027 | INFO     | module.FleetGoTrip:info:10 - Parse Trip Data
+2021-01-02 13:21:12.045 | INFO     | module.FleetGoTrip:info:10 - Success Getting Trip Data
+2021-01-02 13:21:12.045 | INFO     | __main__:fetch_trip_data_fleetgo:92 -     drivernameid_id  ...  truckweight
+0        3383992692  ...            0
+1        3383992692  ...            0
+2        3383992692  ...            0
+3        3383992692  ...            0
+4        3383992692  ...            0
+5        3383992692  ...            0
+6        3383992692  ...            0
+7        3383992692  ...            0
+8        3383992692  ...            0
+9        3383992692  ...            0
+10       3383992692  ...            0
+11       3383992692  ...            0
+12       3383992692  ...            0
+13       3383992692  ...            0
+14       3383992692  ...            0
+15       3383992692  ...            0
+16       3383992692  ...            0
+17       3383992692  ...            0
+18       3383992692  ...            0
+19       3383992692  ...            0
+20       3383992692  ...            0
+21       3383992692  ...            0
+22       3383992692  ...            0
+23       3383992692  ...            0
+24       3383992692  ...            0
+
+[25 rows x 12 columns]
+2021-01-02 13:21:12.063 | INFO     | __main__:fetch_trip_data_fleetgo:93 - Result: Dataframe with Length: 25 
+2021-01-02 13:22:10.089 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:22:10.090 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:22:10.090 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:22:10.090 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:22:10.091 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:22:10.091 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:22:10.467 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:22:10.472 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:22:10.473 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:22:10.473 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:22:10.473 | INFO     | module.FleetGoTrip:info:10 - ======1
+2021-01-02 13:22:10.473 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-01 00:00:00')}
+2021-01-02 13:22:10.983 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:22:10.988 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 25
+2021-01-02 13:22:10.991 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:22:10.991 | INFO     | module.FleetGoTrip:info:10 - Parse Trip Data
+2021-01-02 13:22:11.014 | INFO     | module.FleetGoTrip:info:10 - Success Getting Trip Data
+2021-01-02 13:22:11.014 | INFO     | __main__:fetch_trip_data_fleetgo:92 -     drivernameid_id  ...  truckweight
+0        3383992692  ...            0
+1        3383992692  ...            0
+2        3383992692  ...            0
+3        3383992692  ...            0
+4        3383992692  ...            0
+5        3383992692  ...            0
+6        3383992692  ...            0
+7        3383992692  ...            0
+8        3383992692  ...            0
+9        3383992692  ...            0
+10       3383992692  ...            0
+11       3383992692  ...            0
+12       3383992692  ...            0
+13       3383992692  ...            0
+14       3383992692  ...            0
+15       3383992692  ...            0
+16       3383992692  ...            0
+17       3383992692  ...            0
+18       3383992692  ...            0
+19       3383992692  ...            0
+20       3383992692  ...            0
+21       3383992692  ...            0
+22       3383992692  ...            0
+23       3383992692  ...            0
+24       3383992692  ...            0
+
+[25 rows x 12 columns]
+2021-01-02 13:22:11.032 | INFO     | __main__:fetch_trip_data_fleetgo:93 - Result: Dataframe with Length: 25 
+2021-01-02 13:22:16.975 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:22:16.976 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:22:16.976 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:22:16.976 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:22:16.977 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:22:16.977 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:22:17.538 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:22:17.543 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:22:17.543 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:22:17.543 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:22:17.543 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===1
+2021-01-02 13:22:17.544 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-01 00:00:00')}
+2021-01-02 13:22:18.257 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:22:18.261 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 25
+2021-01-02 13:22:18.264 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:22:18.264 | INFO     | module.FleetGoTrip:info:10 - Parse Trip Data
+2021-01-02 13:22:18.287 | INFO     | module.FleetGoTrip:info:10 - Success Getting Trip Data
+2021-01-02 13:22:18.287 | INFO     | __main__:fetch_trip_data_fleetgo:92 -     drivernameid_id  ...  truckweight
+0        3383992692  ...            0
+1        3383992692  ...            0
+2        3383992692  ...            0
+3        3383992692  ...            0
+4        3383992692  ...            0
+5        3383992692  ...            0
+6        3383992692  ...            0
+7        3383992692  ...            0
+8        3383992692  ...            0
+9        3383992692  ...            0
+10       3383992692  ...            0
+11       3383992692  ...            0
+12       3383992692  ...            0
+13       3383992692  ...            0
+14       3383992692  ...            0
+15       3383992692  ...            0
+16       3383992692  ...            0
+17       3383992692  ...            0
+18       3383992692  ...            0
+19       3383992692  ...            0
+20       3383992692  ...            0
+21       3383992692  ...            0
+22       3383992692  ...            0
+23       3383992692  ...            0
+24       3383992692  ...            0
+
+[25 rows x 12 columns]
+2021-01-02 13:22:18.302 | INFO     | __main__:fetch_trip_data_fleetgo:93 - Result: Dataframe with Length: 25 
+2021-01-02 13:22:49.501 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:22:49.502 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:22:49.503 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:22:49.503 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:22:49.503 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:22:49.503 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:22:50.044 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:22:50.049 | INFO     | module.FleetGoTrip:info:10 - time_range_days / MAX_TIME_RANGE  = 1.2857142857142858
+2021-01-02 13:22:50.049 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:22:50.049 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:22:50.049 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:22:50.049 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===1
+2021-01-02 13:22:50.050 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-01 00:00:00')}
+2021-01-02 13:22:50.886 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:22:50.891 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 25
+2021-01-02 13:22:50.895 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:22:50.895 | INFO     | module.FleetGoTrip:info:10 - Parse Trip Data
+2021-01-02 13:22:50.922 | INFO     | module.FleetGoTrip:info:10 - Success Getting Trip Data
+2021-01-02 13:22:50.922 | INFO     | __main__:fetch_trip_data_fleetgo:92 -     drivernameid_id  ...  truckweight
+0        3383992692  ...            0
+1        3383992692  ...            0
+2        3383992692  ...            0
+3        3383992692  ...            0
+4        3383992692  ...            0
+5        3383992692  ...            0
+6        3383992692  ...            0
+7        3383992692  ...            0
+8        3383992692  ...            0
+9        3383992692  ...            0
+10       3383992692  ...            0
+11       3383992692  ...            0
+12       3383992692  ...            0
+13       3383992692  ...            0
+14       3383992692  ...            0
+15       3383992692  ...            0
+16       3383992692  ...            0
+17       3383992692  ...            0
+18       3383992692  ...            0
+19       3383992692  ...            0
+20       3383992692  ...            0
+21       3383992692  ...            0
+22       3383992692  ...            0
+23       3383992692  ...            0
+24       3383992692  ...            0
+
+[25 rows x 12 columns]
+2021-01-02 13:22:50.939 | INFO     | __main__:fetch_trip_data_fleetgo:93 - Result: Dataframe with Length: 25 
+2021-01-02 13:23:48.267 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:23:48.268 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:23:48.268 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:23:48.268 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:23:48.268 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:23:48.269 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:23:49.276 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:23:49.281 | INFO     | module.FleetGoTrip:info:10 - time_range_days / MAX_TIME_RANGE  = 1.2857142857142858
+2021-01-02 13:23:59.067 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:23:59.068 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:23:59.068 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:23:59.068 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:23:59.068 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:23:59.068 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:24:00.159 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:24:00.164 | INFO     | module.FleetGoTrip:info:10 - time_range_days / MAX_TIME_RANGE  = 1.2857142857142858
+2021-01-02 13:24:00.164 | INFO     | module.FleetGoTrip:info:10 - x ===1
+2021-01-02 13:24:00.164 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:24:00.164 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:24:00.164 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:24:00.165 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===None
+2021-01-02 13:24:35.226 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:24:35.226 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:24:35.227 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:24:35.227 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:24:35.227 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:24:35.227 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:24:36.195 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:24:36.200 | INFO     | module.FleetGoTrip:info:10 - time_range_days / MAX_TIME_RANGE  = 1.2857142857142858
+2021-01-02 13:24:36.200 | INFO     | module.FleetGoTrip:info:10 - 0
+2021-01-02 13:24:36.200 | INFO     | module.FleetGoTrip:info:10 - x ===1
+2021-01-02 13:24:36.201 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:24:36.201 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:24:36.201 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:24:36.201 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===1
+2021-01-02 13:24:36.201 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-01 00:00:00')}
+2021-01-02 13:24:38.868 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:24:38.871 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 25
+2021-01-02 13:24:38.873 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:24:38.874 | INFO     | module.FleetGoTrip:info:10 - Parse Trip Data
+2021-01-02 13:24:38.893 | INFO     | module.FleetGoTrip:info:10 - Success Getting Trip Data
+2021-01-02 13:24:38.893 | INFO     | __main__:fetch_trip_data_fleetgo:92 -     drivernameid_id  ...  truckweight
+0        3383992692  ...            0
+1        3383992692  ...            0
+2        3383992692  ...            0
+3        3383992692  ...            0
+4        3383992692  ...            0
+5        3383992692  ...            0
+6        3383992692  ...            0
+7        3383992692  ...            0
+8        3383992692  ...            0
+9        3383992692  ...            0
+10       3383992692  ...            0
+11       3383992692  ...            0
+12       3383992692  ...            0
+13       3383992692  ...            0
+14       3383992692  ...            0
+15       3383992692  ...            0
+16       3383992692  ...            0
+17       3383992692  ...            0
+18       3383992692  ...            0
+19       3383992692  ...            0
+20       3383992692  ...            0
+21       3383992692  ...            0
+22       3383992692  ...            0
+23       3383992692  ...            0
+24       3383992692  ...            0
+
+[25 rows x 12 columns]
+2021-01-02 13:24:38.905 | INFO     | __main__:fetch_trip_data_fleetgo:93 - Result: Dataframe with Length: 25 
+2021-01-02 13:25:24.489 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:25:24.490 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:25:24.490 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:25:24.490 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:25:24.490 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:25:24.490 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:25:26.179 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:25:26.184 | INFO     | module.FleetGoTrip:info:10 - time_range_days / MAX_TIME_RANGE  = 1.2857142857142858
+2021-01-02 13:25:26.184 | INFO     | module.FleetGoTrip:info:10 - 1
+2021-01-02 13:25:26.185 | INFO     | module.FleetGoTrip:info:10 - x ===2
+2021-01-02 13:25:26.185 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:25:26.185 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:25:26.185 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:25:26.185 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===2
+2021-01-02 13:25:27.390 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-01 00:00:00')}
+2021-01-02 13:25:28.661 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:25:28.665 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 25
+2021-01-02 13:25:28.665 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-10 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-07 00:00:00')}
+2021-01-02 13:25:28.969 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:25:28.970 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 0
+2021-01-02 13:25:28.972 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:25:28.973 | INFO     | module.FleetGoTrip:info:10 - Parse Trip Data
+2021-01-02 13:25:28.995 | INFO     | module.FleetGoTrip:info:10 - Success Getting Trip Data
+2021-01-02 13:25:28.995 | INFO     | __main__:fetch_trip_data_fleetgo:92 -     drivernameid_id  ...  truckweight
+0        3383992692  ...            0
+1        3383992692  ...            0
+2        3383992692  ...            0
+3        3383992692  ...            0
+4        3383992692  ...            0
+5        3383992692  ...            0
+6        3383992692  ...            0
+7        3383992692  ...            0
+8        3383992692  ...            0
+9        3383992692  ...            0
+10       3383992692  ...            0
+11       3383992692  ...            0
+12       3383992692  ...            0
+13       3383992692  ...            0
+14       3383992692  ...            0
+15       3383992692  ...            0
+16       3383992692  ...            0
+17       3383992692  ...            0
+18       3383992692  ...            0
+19       3383992692  ...            0
+20       3383992692  ...            0
+21       3383992692  ...            0
+22       3383992692  ...            0
+23       3383992692  ...            0
+24       3383992692  ...            0
+
+[25 rows x 12 columns]
+2021-01-02 13:25:29.019 | INFO     | __main__:fetch_trip_data_fleetgo:93 - Result: Dataframe with Length: 25 
+2021-01-02 13:26:34.401 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:26:34.402 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:26:34.403 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:26:34.403 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:26:34.403 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:26:34.403 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:26:34.965 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:26:34.970 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-12-01 00:00:00
+2021-01-02 13:26:34.970 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-10 00:00:00
+2021-01-02 13:26:34.970 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:26:34.970 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===2
+2021-01-02 13:26:34.971 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-01 00:00:00')}
+2021-01-02 13:26:36.591 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:26:36.595 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 25
+2021-01-02 13:26:36.595 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-10 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-07 00:00:00')}
+2021-01-02 13:26:37.850 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:26:37.850 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 0
+2021-01-02 13:26:37.854 | INFO     | module.FleetGoTrip:info:10 - TOTAL LENGTH = 25
+2021-01-02 13:26:37.854 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:26:37.854 | INFO     | module.FleetGoTrip:info:10 - Parse Trip Data
+2021-01-02 13:26:37.878 | INFO     | module.FleetGoTrip:info:10 - Success Getting Trip Data
+2021-01-02 13:26:37.878 | INFO     | __main__:fetch_trip_data_fleetgo:92 -     drivernameid_id  ...  truckweight
+0        3383992692  ...            0
+1        3383992692  ...            0
+2        3383992692  ...            0
+3        3383992692  ...            0
+4        3383992692  ...            0
+5        3383992692  ...            0
+6        3383992692  ...            0
+7        3383992692  ...            0
+8        3383992692  ...            0
+9        3383992692  ...            0
+10       3383992692  ...            0
+11       3383992692  ...            0
+12       3383992692  ...            0
+13       3383992692  ...            0
+14       3383992692  ...            0
+15       3383992692  ...            0
+16       3383992692  ...            0
+17       3383992692  ...            0
+18       3383992692  ...            0
+19       3383992692  ...            0
+20       3383992692  ...            0
+21       3383992692  ...            0
+22       3383992692  ...            0
+23       3383992692  ...            0
+24       3383992692  ...            0
+
+[25 rows x 12 columns]
+2021-01-02 13:26:37.901 | INFO     | __main__:fetch_trip_data_fleetgo:93 - Result: Dataframe with Length: 25 
+2021-01-02 13:26:57.076 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:26:57.077 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:26:57.077 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:26:57.077 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:26:57.077 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:26:57.077 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:26:57.499 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:26:57.504 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-11-22 00:00:00
+2021-01-02 13:26:57.504 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-07 00:00:00
+2021-01-02 13:26:57.504 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:26:57.504 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===3
+2021-01-02 13:26:57.505 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-11-28 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-22 00:00:00')}
+2021-01-02 13:26:58.055 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:26:58.060 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 24
+2021-01-02 13:26:58.060 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-04 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-28 00:00:00')}
+2021-01-02 13:26:58.855 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:26:58.860 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 40
+2021-01-02 13:26:58.860 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-04 00:00:00')}
+2021-01-02 13:26:59.241 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:26:59.241 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 0
+2021-01-02 13:26:59.246 | INFO     | module.FleetGoTrip:info:10 - TOTAL LENGTH = 64
+2021-01-02 13:27:00.000 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 13:27:00.001 | INFO     | module.FleetGoTrip:info:10 - Parse Trip Data
+2021-01-02 13:27:00.041 | INFO     | module.FleetGoTrip:info:10 - Success Getting Trip Data
+2021-01-02 13:27:00.041 | INFO     | __main__:fetch_trip_data_fleetgo:92 -     drivernameid_id  ...  truckweight
+0        3383992692  ...            0
+1        3383992692  ...            0
+2        3383992692  ...            0
+3        3383992692  ...            0
+4        3383992692  ...            0
+..              ...  ...          ...
+35       3383992692  ...            0
+36       3383992692  ...            0
+37       3383992692  ...            0
+38       3383992692  ...            0
+39       3383992692  ...            0
+
+[64 rows x 12 columns]
+2021-01-02 13:27:00.058 | INFO     | __main__:fetch_trip_data_fleetgo:93 - Result: Dataframe with Length: 64 
+2021-01-02 13:29:33.008 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:29:33.009 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:29:33.010 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:29:33.011 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:29:33.011 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:29:33.011 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:29:33.534 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:29:33.540 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-11-22 00:00:00
+2021-01-02 13:29:33.540 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-07 00:00:00
+2021-01-02 13:29:33.540 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:29:33.540 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===3
+2021-01-02 13:29:33.540 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-11-28 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-22 00:00:00')}
+2021-01-02 13:29:34.078 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:29:34.081 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 24
+2021-01-02 13:29:34.082 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-04 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-28 00:00:00')}
+2021-01-02 13:29:35.069 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:29:35.074 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 40
+2021-01-02 13:29:35.074 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-04 00:00:00')}
+2021-01-02 13:29:35.690 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:29:35.690 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 0
+2021-01-02 13:30:03.089 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:30:03.090 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:30:03.090 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:30:03.090 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:30:03.091 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:30:03.091 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:30:03.514 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:03.519 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-11-22 00:00:00
+2021-01-02 13:30:03.519 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-07 00:00:00
+2021-01-02 13:30:03.519 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:30:03.519 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===3
+2021-01-02 13:30:03.520 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-11-28 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-22 00:00:00')}
+2021-01-02 13:30:04.156 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:04.161 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 24
+2021-01-02 13:30:04.161 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-04 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-28 00:00:00')}
+2021-01-02 13:30:04.925 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:04.929 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 40
+2021-01-02 13:30:04.930 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-04 00:00:00')}
+2021-01-02 13:30:05.254 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:05.254 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 0
+2021-01-02 13:30:05.260 | INFO     | module.FleetGoTrip:info:10 - Index(['Id', 'EquipmentId', 'RideNumber', 'Distance', 'RideType', 'From', 'To',
+       'DriverName', 'DriverId', 'EncodedTrack', 'EncodedSpeed', 'RouteTicks',
+       'EncodedTime', 'EncodedPTO', 'Events', 'CustomField', 'Purpose',
+       'Reason', 'Contact', 'Remarks', 'IsCorrection', 'FixedMileage',
+       'CorrectionMileage', 'Timestamp', 'Ticks', 'StationaryTimeInHours',
+       'FuelUsedInLiters', 'LicensePlate', 'RouteDescription',
+       'RoutePlannerDistance', 'AvlDTO', 'TripTypeId', 'PrivateDetourKm'],
+      dtype='object')
+2021-01-02 13:30:35.704 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:30:35.705 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:30:35.706 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:30:35.706 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:30:35.706 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:30:35.706 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:30:36.044 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:36.049 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-11-22 00:00:00
+2021-01-02 13:30:36.049 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-07 00:00:00
+2021-01-02 13:30:36.049 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:30:36.049 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===3
+2021-01-02 13:30:36.050 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-11-28 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-22 00:00:00')}
+2021-01-02 13:30:36.670 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:36.675 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 24
+2021-01-02 13:30:36.675 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-04 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-28 00:00:00')}
+2021-01-02 13:30:37.443 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:37.448 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 40
+2021-01-02 13:30:37.449 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-04 00:00:00')}
+2021-01-02 13:30:37.788 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:37.789 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 0
+2021-01-02 13:30:37.794 | INFO     | module.FleetGoTrip:info:10 - 2020-11-26T03:17:44.4600000+01:00
+2021-01-02 13:30:55.640 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:30:55.640 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 13:30:55.641 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 13:30:55.641 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:30:55.641 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:30:55.641 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:30:56.163 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:56.168 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-11-22 00:00:00
+2021-01-02 13:30:56.168 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-07 00:00:00
+2021-01-02 13:30:56.168 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:30:56.169 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===3
+2021-01-02 13:30:56.169 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-11-28 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-22 00:00:00')}
+2021-01-02 13:30:56.686 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:56.690 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 24
+2021-01-02 13:30:56.691 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-04 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-28 00:00:00')}
+2021-01-02 13:30:57.386 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:57.390 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 40
+2021-01-02 13:30:57.391 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-04 00:00:00')}
+2021-01-02 13:30:57.722 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:30:57.722 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 0
+2021-01-02 13:30:57.729 | INFO     | module.FleetGoTrip:info:10 - 64
+2021-01-02 13:30:58.566 | INFO     | module.FleetGoTrip:info:10 - 64
+2021-01-02 13:58:01.732 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 13:58:01.734 | INFO     | module.FleetGoLogin:info:23 - No Valid Token - Need To Get One.
+2021-01-02 13:58:01.735 | INFO     | module.FleetGoLogin:_request_login:149 - Login:Request new Token
+2021-01-02 13:58:02.253 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 13:58:02.254 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 13:58:02.254 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 13:58:02.623 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:58:02.633 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-11-22 00:00:00
+2021-01-02 13:58:02.634 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-07 00:00:00
+2021-01-02 13:58:02.634 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 13:58:02.634 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===3
+2021-01-02 13:58:02.635 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-11-28 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-22 00:00:00')}
+2021-01-02 13:58:03.227 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:58:03.234 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 24
+2021-01-02 13:58:03.234 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-04 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-28 00:00:00')}
+2021-01-02 13:58:04.013 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:58:04.020 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 40
+2021-01-02 13:58:04.021 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-04 00:00:00')}
+2021-01-02 13:58:04.414 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 13:58:04.415 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 0
+2021-01-02 14:00:33.311 | INFO     | module.FleetGoTrip:info:10 - 64
+2021-01-02 14:00:33.312 | INFO     | module.FleetGoTrip:info:10 - 64
+2021-01-02 14:00:44.291 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 14:00:44.292 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 14:00:44.293 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 14:00:44.293 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 14:00:44.294 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 14:00:44.294 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 14:00:44.927 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 14:00:44.932 | INFO     | module.FleetGoTrip:info:10 - FROM ==== = 2020-11-22 00:00:00
+2021-01-02 14:00:44.932 | INFO     | module.FleetGoTrip:info:10 - TO ==== = 2020-12-07 00:00:00
+2021-01-02 14:00:44.932 | INFO     | module.FleetGoTrip:info:10 - ----------------
+2021-01-02 14:00:44.932 | INFO     | module.FleetGoTrip:info:10 - ===number_requests_needed===3
+2021-01-02 14:00:44.932 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-11-28 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-22 00:00:00')}
+2021-01-02 14:00:45.399 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 14:00:45.403 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 24
+2021-01-02 14:00:45.404 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-04 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-28 00:00:00')}
+2021-01-02 14:00:46.090 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 14:00:46.095 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 40
+2021-01-02 14:00:46.095 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-07 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-04 00:00:00')}
+2021-01-02 14:00:47.285 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 14:00:47.286 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 0
+2021-01-02 14:00:47.294 | INFO     | module.FleetGoTrip:info:10 - 64
+2021-01-02 14:00:47.295 | INFO     | module.FleetGoTrip:info:10 - 64
+2021-01-02 14:00:47.295 | INFO     | module.FleetGoTrip:info:10 - TOTAL LENGTH = 64
+2021-01-02 14:00:47.295 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 14:00:47.295 | INFO     | module.FleetGoTrip:info:10 - Parse Trip Data
+2021-01-02 14:00:47.336 | INFO     | module.FleetGoTrip:info:10 - Success Getting Trip Data
+2021-01-02 14:00:47.336 | INFO     | __main__:fetch_trip_data_fleetgo:92 -     drivernameid_id  ...  truckweight
+0        3383992692  ...            0
+1        3383992692  ...            0
+2        3383992692  ...            0
+3        3383992692  ...            0
+4        3383992692  ...            0
+..              ...  ...          ...
+35       3383992692  ...            0
+36       3383992692  ...            0
+37       3383992692  ...            0
+38       3383992692  ...            0
+39       3383992692  ...            0
+
+[64 rows x 12 columns]
+2021-01-02 14:00:47.352 | INFO     | __main__:fetch_trip_data_fleetgo:93 - Result: Dataframe with Length: 64 
+2021-01-02 14:02:21.187 | INFO     | __main__:fetch_trip_data_fleetgo:88 - RUN fetch_trip_data_fleetgo
+2021-01-02 14:02:21.188 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 14:02:21.189 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 14:02:21.189 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 14:02:21.189 | INFO     | module.FleetGoTrip:info:10 - Get Employee id based on employee name: Employee(FirstName='Kamil', Name='Kaczorowski')
+2021-01-02 14:02:21.189 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 14:02:21.746 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 14:02:21.751 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-11-28 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-22 00:00:00')}
+2021-01-02 14:02:22.372 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 14:02:22.376 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 24
+2021-01-02 14:02:22.376 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-04 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-11-28 00:00:00')}
+2021-01-02 14:02:23.097 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 14:02:23.101 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 40
+2021-01-02 14:02:23.101 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-10 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-04 00:00:00')}
+2021-01-02 14:02:23.448 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 14:02:23.449 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 0
+2021-01-02 14:02:23.449 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Trips/GetEmployeeTrips PARAMS={'to': Timestamp('2020-12-15 00:00:00'), 'extendedInfo': False, 'employeeId': 3383992692, 'from': Timestamp('2020-12-10 00:00:00')}
+2021-01-02 14:02:24.555 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 14:02:24.556 | INFO     | module.FleetGoTrip:info:10 - LEN PARTIAL 0
+2021-01-02 14:02:24.563 | INFO     | module.FleetGoTrip:info:10 - Validate Trip Response
+2021-01-02 14:02:24.563 | INFO     | module.FleetGoTrip:info:10 - Parse Trip Data
+2021-01-02 14:02:24.600 | INFO     | module.FleetGoTrip:info:10 - Success Getting Trip Data
+2021-01-02 14:02:24.601 | INFO     | __main__:fetch_trip_data_fleetgo:92 -     drivernameid_id  ...  truckweight
+0        3383992692  ...            0
+1        3383992692  ...            0
+2        3383992692  ...            0
+3        3383992692  ...            0
+4        3383992692  ...            0
+..              ...  ...          ...
+35       3383992692  ...            0
+36       3383992692  ...            0
+37       3383992692  ...            0
+38       3383992692  ...            0
+39       3383992692  ...            0
+
+[64 rows x 12 columns]
+2021-01-02 14:02:24.615 | INFO     | __main__:fetch_trip_data_fleetgo:93 - Result: Dataframe with Length: 64 
+2021-01-02 15:01:03.667 | INFO     | module.FleetGoLogin:info:23 - No Valid Token - Need To Get One.
+2021-01-02 15:01:03.668 | INFO     | module.FleetGoLogin:_request_login:149 - Login:Request new Token
+2021-01-02 15:01:04.238 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:04:00.419 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:04:00.420 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:04:00.421 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:04:00.422 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:04:00.994 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 15:06:16.046 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:06:16.048 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:06:16.048 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:06:16.049 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:06:16.638 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 15:06:16.643 | INFO     | module.FleetGoDriver:info:10 - df_driver = Name                                                         Wienecke
+FullName                                                     Wienecke
+Initials                                                             
+FamilyNamePrefix                                                     
+FirstName                                                      Jannik
+EmailAddress                                wienecke.jannik@gmail.com
+PersonelNumber                                                       
+Gender                                                           Male
+User                {'Id': 2294758484, 'Url': 'https://api.fleetgo...
+Code                                                               16
+Id                                                         3383990477
+Name: 0, dtype: object
+2021-01-02 15:08:19.570 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:08:19.571 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:08:19.571 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:08:19.571 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:08:20.259 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 15:08:36.693 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:08:36.694 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:08:36.694 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:08:36.695 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:08:37.129 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 15:08:37.134 | INFO     | module.FleetGoDriver:info:10 - df_driver = Name                                                         Wienecke
+FullName                                                     Wienecke
+Initials                                                             
+FamilyNamePrefix                                                     
+FirstName                                                      Jannik
+EmailAddress                                wienecke.jannik@gmail.com
+PersonelNumber                                                       
+Gender                                                           Male
+User                {'Id': 2294758484, 'Url': 'https://api.fleetgo...
+Code                                                               16
+Id                                                         3383990477
+Name: 0, dtype: object
+2021-01-02 15:09:15.659 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:09:15.659 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:09:15.659 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:09:15.660 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:09:16.097 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 15:09:16.100 | INFO     | module.FleetGoDriver:info:10 - df_driver = {'Id': 2294758484, 'Url': 'https://api.fleetgo.com/api/Users/2294758484'}
+2021-01-02 15:11:03.944 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:11:03.944 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:11:03.944 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:11:03.945 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:11:04.562 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 15:11:34.918 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:11:34.919 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:11:34.920 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:11:34.921 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:11:35.311 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 15:11:45.635 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:11:45.636 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:11:45.636 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:11:45.637 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:11:46.006 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 15:12:10.168 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:12:10.169 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:12:10.169 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:12:10.170 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:12:10.544 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 15:12:33.926 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:12:33.927 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:12:33.927 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:12:33.928 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:12:34.561 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 15:12:34.567 | INFO     | module.FleetGoDriver:info:10 - df_driver = Name                                                         Wienecke
+FullName                                                     Wienecke
+Initials                                                             
+FamilyNamePrefix                                                     
+FirstName                                                      Jannik
+EmailAddress                                wienecke.jannik@gmail.com
+PersonelNumber                                                       
+Gender                                                           Male
+User                {'Id': 2294758484, 'Url': 'https://api.fleetgo...
+Code                                                               16
+Id                                                         3383990477
+lastname                                                     Wienecke
+fistname                                                       Jannik
+drivernameid                                               3383990477
+Name: 0, dtype: object
+2021-01-02 15:13:31.913 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:13:31.913 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:13:31.913 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:13:31.914 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:13:32.315 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 15:13:38.447 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 15:13:38.447 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 15:13:38.448 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 15:13:38.448 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 15:13:38.834 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 16:19:29.217 | INFO     | __main__:fetch_driver_fleetgo:114 - fetch_driver_fleetgo...
+2021-01-02 16:19:29.219 | INFO     | module.FleetGoLogin:info:23 - No Valid Token - Need To Get One.
+2021-01-02 16:19:29.220 | INFO     | module.FleetGoLogin:_request_login:149 - Login:Request new Token
+2021-01-02 16:19:29.786 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:19:29.787 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 16:19:30.172 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 16:20:10.953 | INFO     | __main__:fetch_driver_fleetgo:114 - fetch_driver_fleetgo...
+2021-01-02 16:20:10.953 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:20:10.953 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:20:10.954 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:20:10.954 | INFO     | module.Fleet_Go:_get_request:60 - Request FleetGo: URL=https://api.fleetgo.com/api/Employee/Get PARAMS={}
+2021-01-02 16:20:11.346 | INFO     | module.Fleet_Go:_get_request:66 - Response FleetGo: Ok=True Status=200
+2021-01-02 16:20:11.352 | INFO     | __main__:fetch_driver_fleetgo:120 - Result: Dataframe with Length: 23 
+2021-01-02 16:25:35.989 | INFO     | __main__:fetch_vehicle_fleetgo:144 - fetch_vehicle_fleetgo...
+2021-01-02 16:25:35.991 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:25:35.991 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:25:35.992 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:26:23.051 | INFO     | __main__:fetch_vehicle_fleetgo:144 - fetch_vehicle_fleetgo...
+2021-01-02 16:26:23.051 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:26:23.052 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:26:23.052 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:26:43.776 | INFO     | __main__:fetch_vehicle_fleetgo:144 - fetch_vehicle_fleetgo...
+2021-01-02 16:26:43.776 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:26:43.777 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:26:43.777 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:26:43.777 | INFO     | module.Fleet_Go:_get_request:61 - Request FleetGo: URL=https://api.fleetgo.com/api/Equipment/GetFleet PARAMS={}
+2021-01-02 16:26:44.412 | INFO     | module.Fleet_Go:_get_request:67 - Response FleetGo: Ok=False Status=404
+2021-01-02 16:27:13.868 | INFO     | __main__:fetch_vehicle_fleetgo:144 - fetch_vehicle_fleetgo...
+2021-01-02 16:27:13.869 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:27:13.870 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:27:13.870 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:27:13.871 | INFO     | module.Fleet_Go:_get_request:61 - Request FleetGo: URL=https://api.fleetgo.com/api/Equipment/GetFleet PARAMS={}
+2021-01-02 16:27:14.210 | INFO     | module.Fleet_Go:_get_request:67 - Response FleetGo: Ok=False Status=404
+2021-01-02 16:28:56.749 | INFO     | __main__:fetch_vehicle_fleetgo:144 - fetch_vehicle_fleetgo...
+2021-01-02 16:28:56.749 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:28:56.750 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:28:56.751 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:28:56.752 | INFO     | module.Fleet_Go:_get_request:61 - Request FleetGo: URL=https://api.fleetgo.com/api/Equipment/GetFleet PARAMS={'groupId': 0, 'hasDeviceOnly': False}
+2021-01-02 16:28:57.439 | INFO     | module.Fleet_Go:_get_request:67 - Response FleetGo: Ok=True Status=200
+2021-01-02 16:28:57.478 | INFO     | __main__:fetch_vehicle_fleetgo:150 - Result: Dataframe with Length: 2 
+2021-01-02 16:29:10.551 | INFO     | __main__:fetch_vehicle_fleetgo:144 - fetch_vehicle_fleetgo...
+2021-01-02 16:29:10.552 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:29:10.552 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:29:10.552 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:29:10.553 | INFO     | module.Fleet_Go:_get_request:61 - Request FleetGo: URL=https://api.fleetgo.com/api/Equipment/GetFleet PARAMS={'groupId': 0, 'hasDeviceOnly': False}
+2021-01-02 16:29:10.952 | INFO     | module.Fleet_Go:_get_request:67 - Response FleetGo: Ok=True Status=200
+2021-01-02 16:29:10.966 | INFO     | __main__:fetch_vehicle_fleetgo:150 - Result: Dataframe with Length: 2 
+2021-01-02 16:34:42.509 | INFO     | __main__:fetch_vehicle_fleetgo:144 - fetch_vehicle_fleetgo...
+2021-01-02 16:34:42.510 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:34:42.511 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:34:42.511 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:34:42.512 | INFO     | module.Fleet_Go:_get_request:61 - Request FleetGo: URL=https://api.fleetgo.com/api/Equipment/GetFleet PARAMS={'groupId': 0, 'hasDeviceOnly': False}
+2021-01-02 16:34:43.091 | INFO     | module.Fleet_Go:_get_request:67 - Response FleetGo: Ok=True Status=200
+2021-01-02 16:34:43.101 | INFO     | __main__:fetch_vehicle_fleetgo:150 - Result: Dataframe with Length: 2 
+2021-01-02 16:34:58.660 | INFO     | __main__:fetch_vehicle_fleetgo:144 - fetch_vehicle_fleetgo...
+2021-01-02 16:34:58.660 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:34:58.660 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:34:58.661 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:34:58.661 | INFO     | module.Fleet_Go:_get_request:61 - Request FleetGo: URL=https://api.fleetgo.com/api/Equipment/GetFleet PARAMS={'groupId': 0, 'hasDeviceOnly': False}
+2021-01-02 16:34:59.066 | INFO     | module.Fleet_Go:_get_request:67 - Response FleetGo: Ok=True Status=200
+2021-01-02 16:35:21.524 | INFO     | __main__:fetch_vehicle_fleetgo:144 - fetch_vehicle_fleetgo...
+2021-01-02 16:35:21.524 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:35:21.524 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:35:21.524 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:35:21.525 | INFO     | module.Fleet_Go:_get_request:61 - Request FleetGo: URL=https://api.fleetgo.com/api/Equipment/GetFleet PARAMS={'groupId': 0, 'hasDeviceOnly': False}
+2021-01-02 16:35:21.919 | INFO     | module.Fleet_Go:_get_request:67 - Response FleetGo: Ok=True Status=200
+2021-01-02 16:35:44.175 | INFO     | __main__:fetch_vehicle_fleetgo:144 - fetch_vehicle_fleetgo...
+2021-01-02 16:35:44.176 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:35:44.176 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:35:44.176 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:35:44.177 | INFO     | module.Fleet_Go:_get_request:61 - Request FleetGo: URL=https://api.fleetgo.com/api/Equipment/GetFleet PARAMS={'groupId': 0, 'hasDeviceOnly': False}
+2021-01-02 16:35:44.625 | INFO     | module.Fleet_Go:_get_request:67 - Response FleetGo: Ok=True Status=200
+2021-01-02 16:35:44.638 | INFO     | __main__:fetch_vehicle_fleetgo:150 - Result: Dataframe with Length: 2 
+2021-01-02 16:35:51.695 | INFO     | __main__:fetch_vehicle_fleetgo:144 - fetch_vehicle_fleetgo...
+2021-01-02 16:35:51.696 | INFO     | module.FleetGoLogin:info:23 - Login:Get Token From File.
+2021-01-02 16:35:51.696 | INFO     | module.FleetGoLogin:info:23 - Login:Get Refresh Token From File.
+2021-01-02 16:35:51.696 | INFO     | module.FleetGoLogin:info:23 - Login FleetGo Successfully
+2021-01-02 16:35:51.697 | INFO     | module.Fleet_Go:_get_request:61 - Request FleetGo: URL=https://api.fleetgo.com/api/Equipment/GetFleet PARAMS={'groupId': 0, 'hasDeviceOnly': False}
+2021-01-02 16:35:52.088 | INFO     | module.Fleet_Go:_get_request:67 - Response FleetGo: Ok=True Status=200
+2021-01-02 16:35:52.099 | INFO     | __main__:fetch_vehicle_fleetgo:150 - Result: Dataframe with Length: 2 

@@ -1,5 +1,6 @@
 from typing import Any, Dict, List, NamedTuple, Union
 from loguru import logger
+from pandas.core.arrays import integer
 from .Fleet_Go import FLEET_GO_ENDPOINTS, FleetGo
 
 import pandas as pd
@@ -160,14 +161,80 @@ class FleetGoTrip(FleetGo):
 
             return df_trip
 
+        def _fetch():
+
+            def _run_get_request():
+                return self._get_request(FLEET_GO_ENDPOINTS.EMPLOYEE_TRIP,
+                                         query_params=params)
+
+            def _get_time_range():
+                time_range: int = (to - from_).days
+                return time_range
+
+            def _get_number_requests_needed():
+                return int(time_range_days / (MAX_TIME_RANGE - 1)) + 1
+
+            def _split_time_range_and_run_requests():
+
+                def _set_params_from_to_datet():
+                    from_date: pd.Timestamp = from_ + \
+                        pd.to_timedelta(6, unit='days') * request_counter
+
+                    to_date: pd.Timestamp = from_date + \
+                        pd.to_timedelta(6, unit='days')
+
+                    if to_date > to:
+                        to_date = to
+
+                    params['from'] = from_date
+                    params['to'] = to_date
+
+                def _merge_dataframes():
+                    df_all: pd.DataFrame = pd.concat(df_trip_all)
+
+                    df_all_no_duplicates = df_all.drop_duplicates('Timestamp')
+
+                    return df_all_no_duplicates
+
+                def _loop_requests():
+                    nonlocal request_counter
+                    for request_counter in range(number_requests_needed):
+                        _set_params_from_to_datet()
+                        df_trip_partial = _run_get_request()
+                        info(f"LEN PARTIAL {len(df_trip_partial)}")
+                        df_trip_all.append(df_trip_partial)
+
+                request_counter = 0
+                df_trip_all: List[pd.DataFrame] = []
+
+                _loop_requests()
+                df = _merge_dataframes()
+
+                return df
+
+            MAX_TIME_RANGE = 7
+
+            from_: pd.Timestamp = pd.to_datetime(params['from'])
+
+            to: pd.Timestamp = pd.to_datetime(params['to'])
+
+            time_range_days: int = _get_time_range()
+
+            number_requests_needed: int = _get_number_requests_needed()
+
+            time_range_to_long = time_range_days > MAX_TIME_RANGE
+
+            if (time_range_to_long):
+                return _split_time_range_and_run_requests()
+            else:
+                return _run_get_request()
+
         info(f"Get Employee id based on employee name: {input.employee}")
         employee_id = self._get_employee_id(input.employee)
 
         params = _parse_params()
 
-        info(f'Fetch Trip Data: Params={params}')
-        df_trip = self._get_request(FLEET_GO_ENDPOINTS.EMPLOYEE_TRIP,
-                                    query_params=params)
+        df_trip = _fetch()
 
         info("Validate Trip Response")
         _validate_trip_response(df_trip)
